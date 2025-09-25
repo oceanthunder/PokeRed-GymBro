@@ -57,8 +57,8 @@ if __name__ == "__main__":
         'emulation_speed': (0 if HEADLESS else 5),
         'allow_start': False,  # disallow START/menu
         'action_freq': 8,  # Faster action frequency for more responsive speed
-        'init_state_path': r'C:\curr_project\open_RL\PPO_trial\has_pokedex.state',
-        'gb_path': r'C:\curr_project\open_RL\PPO_trial\PokemonRed.gb',
+        'init_state_path': r'has_pokedex.state',
+        'gb_path': r'PokemonRed.gb',
         'max_steps': ep_length,
     }
     

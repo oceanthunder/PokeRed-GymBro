@@ -71,7 +71,7 @@ class AdvancedPyBoyEnv(gym.Env):
         # Initialize PyBoy
         window = "null" if self.headless else "SDL2"
         # Disable audio to prevent buffer overrun errors at high speeds
-        self.pyboy = PyBoy(self.gb_path, window=window, sound=False)
+        self.pyboy = PyBoy(self.gb_path, window=window, sound=False, sound_emulated=False)
         # Emulation speed: 0=unlimited (fast), 1=normal human speed
         # Default to 1 (human-speed) when visible, 0 when headless, but allow override via config
         default_speed = 0 if self.headless else 1
